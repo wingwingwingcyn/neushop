@@ -18,7 +18,7 @@ public class Generator {
         AutoGenerator mpg = new AutoGenerator();
         // 构建配置器
         GlobalConfig gc = new GlobalConfig();
-        gc.setAuthor("giegie");
+        gc.setAuthor("YanMin zhang");
         // 定义项目路径
         String path = System.getProperty("user.dir");
         mpg.setGlobalConfig(gc);
@@ -27,7 +27,7 @@ public class Generator {
         String othenpath = path + "/customer";
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://192.168.80.128:3306/shop?useUnicode=true&useSSL=false&characterEncoding=utf8");
+        dsc.setUrl("jdbc:mysql://192.168.80.151:3306/shop?useUnicode=true&useSSL=false&characterEncoding=utf8");
         // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
@@ -62,7 +62,7 @@ public class Generator {
 
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
-        strategy.setInclude("cms_state");
+        strategy.setInclude("cms_customer_address");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);

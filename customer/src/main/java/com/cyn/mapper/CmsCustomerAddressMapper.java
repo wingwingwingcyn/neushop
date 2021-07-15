@@ -8,8 +8,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * 顾客地址表 Mapper 接口
  * </p>
  *
- * @author giegie
- * @since 2021-07-12
+ * @author YanMin zhang
+ * @since 2021-07-14
  */
 public interface CmsCustomerAddressMapper extends BaseMapper<CmsCustomerAddress> {
 
