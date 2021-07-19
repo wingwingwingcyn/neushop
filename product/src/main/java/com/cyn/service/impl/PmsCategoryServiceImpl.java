@@ -35,6 +35,14 @@ public class PmsCategoryServiceImpl extends ServiceImpl<PmsCategoryMapper, PmsCa
     }
 
     @Override
+    public List<PmsCategory> getParent() {
+        QueryWrapper<PmsCategory> wrapper = new QueryWrapper<>();
+        wrapper.eq("parent_id",0);
+        wrapper.eq("active",1);
+        return this.list(wrapper);
+    }
+
+    @Override
     public List<PmsCategory> getByParentId(Long parentId) {
         return this.getByParentId(parentId,null);
     }
