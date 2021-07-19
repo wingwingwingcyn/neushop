@@ -72,6 +72,23 @@ public class UmsUserController {
         return ResultJson.success(umsUserService.updateById(umsUser),"修改用户成功");
     }
 
+    @PostMapping("/updatePwd")
+    ResultJson updatePwd(Long id,String password,String newPassword) throws IOException, InvalidKeyException, InvalidResponseException, InsufficientDataException, NoSuchAlgorithmException, ServerException, InternalException, XmlParserException, InvalidBucketNameException, ErrorResponseException {
+        UmsUser umsUser=umsUserService.getById(id);
+        String oldPwd=umsUser.getPassword();
+        System.out.println(umsUser);
+        System.out.println(id);
+        System.out.println(oldPwd+"==========="+password+"================"+newPassword);
+        if(null==newPassword  || null==password || oldPwd==passwordEncoder.encode(newPassword)){
+            return ResultJson.error("新密码与原密码相同，请重新输入");
+        }else if (!passwordEncoder.matches(password,oldPwd)){
+            return ResultJson.error("密码不一致，请重新输入");
+        }else{
+            umsUser.setPassword(passwordEncoder.encode(newPassword));
+            return ResultJson.success(umsUserService.updateById(umsUser),"修改用户密码成功，请重新登录");
+        }
+    }
+
     @PostMapping("/del")
     ResultJson del(UmsUser umsUser) {
         String message = umsUser.getActive() == 0 ? "删除用户成功" : "恢复用户成功";

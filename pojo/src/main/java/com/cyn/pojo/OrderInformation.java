@@ -19,19 +19,21 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class CmsOrder extends BasePojo {
-
-    private static final long serialVersionUID = 1L;
-
+public class OrderInformation extends BasePojo {
     /**
      * 客户id
      */
     private Long customerId;
 
     /**
-     * 地址id
+     * 账户
      */
-    private Long addressId;
+    private String account;
+
+    /**
+     * 昵称
+     */
+    private String nickyName;
 
     /**
      * 商品id
@@ -39,7 +41,12 @@ public class CmsOrder extends BasePojo {
     private Long productId;
 
     /**
-     * 商品价格
+     * 商品名称
+     */
+    private String name;
+
+    /**
+     * 标准价格
      */
     private BigDecimal price;
 
@@ -48,5 +55,8 @@ public class CmsOrder extends BasePojo {
      */
     private Integer stateId;
 
-
+    /**
+     * 订单状态
+     */
+    private String stateName;
 }

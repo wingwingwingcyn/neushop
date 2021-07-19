@@ -93,6 +93,7 @@ public class PmsProductController {
             spuValueList.add(pmsSpuValue);
         }
         spuValueService.saveBatch(spuValueList);
+
         List<PmsSkuValue> skuValueList = new ArrayList<>();
         for(String sku : skus) {
             PmsSkuValue pmsSkuValue = JSONObject.parseObject(sku,PmsSkuValue.class);
@@ -100,13 +101,18 @@ public class PmsProductController {
             skuValueList.add(pmsSkuValue);
         }
         skuValueService.saveBatch(skuValueList);
+
         List<PmsStock> stockList = new ArrayList<>();
         for(String stock : stocks) {
-            PmsStock pmsStock = JSONObject.parseObject(stock, PmsStock.class);
+            System.out.println(stock);
+            PmsStock pmsStock = JSON.parseObject(stock, PmsStock.class);
             pmsStock.setProductId(pmsProduct.getId());
             stockList.add(pmsStock);
         }
         stockService.saveBatch(stockList);
         return ResultJson.success("","添加成功");
     }
+
+
+
 }

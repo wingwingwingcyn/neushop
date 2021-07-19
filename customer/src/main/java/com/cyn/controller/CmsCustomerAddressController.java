@@ -6,6 +6,7 @@ import com.cyn.service.ICmsCustomerAddressService;
 import com.cyn.util.ResultJson;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -17,10 +18,11 @@ import javax.annotation.Resource;
  * 顾客地址表 前端控制器
  * </p>
  *
- * @author YanMin zhang
- * @since 2021-07-14
+ * @author giegie
+ * @since 2021-07-12
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/cms-customer-address")
 public class CmsCustomerAddressController {
     @Resource
