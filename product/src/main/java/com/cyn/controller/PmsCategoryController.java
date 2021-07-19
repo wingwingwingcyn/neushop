@@ -43,4 +43,9 @@ public class PmsCategoryController {
         String message = pmsCategory.getActive() == 0 ? "删除分类成功" : "恢复分类成功";
         return ResultJson.success(categoryService.updateById(pmsCategory),message);
     }
+
+    @GetMapping("/getparent")
+    ResultJson getp(){
+        return ResultJson.success(categoryService.getParent(),"成功");
+    }
 }
