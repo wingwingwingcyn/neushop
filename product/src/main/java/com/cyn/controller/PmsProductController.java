@@ -61,7 +61,6 @@ public class PmsProductController {
 
     @GetMapping("/getProductByName")
     ResultJson getpbyname(String name){
-        System.out.println("??????????????????????????"+name);
         return ResultJson.success(productService.list(name));
     }
 
