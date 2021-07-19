@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cyn.mapper.CmsOrderMapper">
-    <select id="getOrderList" resultType="OrderInformation" parameterType="java.lang.Long">
+    <select id="getOrderList" resultType="com.cyn.pojo.OrderInformation" parameterType="java.lang.Long">
         select
             b.id,b.account,b.nicky_name,c.id,c.name,c.price,a.state_id
         from

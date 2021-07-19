@@ -18,6 +18,5 @@ import java.util.List;
  * @since 2021-07-12
  */
 public interface ICmsOrderService extends IService<CmsOrder> {
-    List<OrderInformation> getOrders(String name);
-
+    List<OrderInformation> getOrders();
 }

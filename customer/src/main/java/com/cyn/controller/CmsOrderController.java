@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,9 +34,8 @@ public class CmsOrderController {
     ICmsOrderService cmsOrderService;
 
     @GetMapping("/list")
-    ResultJson list(String name) throws InterruptedException {
-//        List<CmsCustomer> cmsCustomerList=cmsOrderService.getCustomers();
-        List<OrderInformation> orderList=cmsOrderService.getOrders(name);
+    ResultJson list() throws InterruptedException {
+        List<OrderInformation> orderList=cmsOrderService.getOrders();
         for(OrderInformation value:orderList){
             if (value.getStateId()==1){
                 value.setStateName("待付款");
@@ -50,9 +50,36 @@ public class CmsOrderController {
             }else{
                 value.setStateName("已结束");
             }
-            System.out.println(value);
         }
         return ResultJson.success(orderList) ;
+    }
+
+    @GetMapping("/find")
+    ResultJson find(String name) throws InterruptedException {
+        List<OrderInformation> orderList=cmsOrderService.getOrders();
+        for(OrderInformation value:orderList){
+            if (value.getStateId()==1){
+                value.setStateName("待付款");
+            }else if (value.getStateId()==2){
+                value.setStateName("待发货");
+            }else if (value.getStateId()==3){
+                value.setStateName("待收货");
+            }else if (value.getStateId()==4){
+                value.setStateName("待评价");
+            }else if (value.getStateId()==5){
+                value.setStateName("售后/退款");
+            }else{
+                value.setStateName("已结束");
+            }
+        }
+        List<OrderInformation> orderList2=new ArrayList<>();
+        System.out.println("=======name========"+name);
+        for(OrderInformation value:orderList){
+            if (value.getNickyName().contains(name)){
+                orderList2.add(value);
+            }
+        }
+        return ResultJson.success(orderList2) ;
     }
 
     @GetMapping("/getone")
