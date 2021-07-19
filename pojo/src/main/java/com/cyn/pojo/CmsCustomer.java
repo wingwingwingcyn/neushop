@@ -1,8 +1,12 @@
 package com.cyn.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.cyn.pojo.BasePojo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 /**
  * <p>
@@ -14,6 +18,8 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
+@NoArgsConstructor
+@AllArgsConstructor
 public class CmsCustomer extends BasePojo {
 
     private static final long serialVersionUID = 1L;
@@ -21,7 +27,12 @@ public class CmsCustomer extends BasePojo {
     /**
      * 账户
      */
-    private String customer;
+    private String account;
+
+    /**
+     * 昵称
+     */
+    private String nickyName;
 
     /**
      * 密码
@@ -43,5 +54,10 @@ public class CmsCustomer extends BasePojo {
      */
     private Integer active;
 
-
+    /**
+     * 密码明文
+     * */
+    @TableField(exist = false)
+    @JsonIgnore
+    private String rawPassword;
 }
