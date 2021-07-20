@@ -61,6 +61,7 @@ public class CmsCustomerController {
         cmsCustomer.setSex(sex);
         cmsCustomer.setNickyName(nickyName);
         cmsCustomer.setPassword(passwordEncoder.encode(password));
+        System.out.println(cmsCustomer);
         return ResultJson.success(cmsCustomerService.save(cmsCustomer),"添加用户成功");
     }
 
