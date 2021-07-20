@@ -52,4 +52,8 @@ public class CmsCustomerAddressController {
     ResultJson getone(Long chosenAddressId){
         return ResultJson.success(addressService.getById(chosenAddressId));
     }
+    @GetMapping("/getDefault")
+    ResultJson getDefault(){
+        return ResultJson.success(addressService.getDefault());
+    }
 }

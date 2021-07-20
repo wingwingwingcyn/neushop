@@ -37,4 +37,11 @@ public class CmsCustomerAddressServiceImpl extends ServiceImpl<CmsCustomerAddres
         this.updateBatchById(list);
         return "设置默认收货地址成功";
     }
+
+    @Override
+    public CmsCustomerAddress getDefault() {
+        QueryWrapper<CmsCustomerAddress> wrapper = new QueryWrapper<>();
+        wrapper.eq("is_default",1);
+        return this.getOne(wrapper);
+    }
 }

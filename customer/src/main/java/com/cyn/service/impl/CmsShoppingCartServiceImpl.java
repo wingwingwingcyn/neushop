@@ -1,10 +1,14 @@
 package com.cyn.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cyn.pojo.CmsShoppingCart;
 import com.cyn.mapper.CmsShoppingCartMapper;
 import com.cyn.service.ICmsShoppingCartService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -16,5 +20,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CmsShoppingCartServiceImpl extends ServiceImpl<CmsShoppingCartMapper, CmsShoppingCart> implements ICmsShoppingCartService {
-
+    @Override
+    public List<CmsShoppingCart> list(String productName) {
+        QueryWrapper<CmsShoppingCart> wrapper=new QueryWrapper<>();
+        if(StringUtils.isNotBlank(productName)){
+            wrapper.like("product_name",productName);
+        }
+        return this.list(wrapper);
+    }
 }
