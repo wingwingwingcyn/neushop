@@ -11,6 +11,8 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
@@ -55,6 +57,15 @@ public class PmsBrandController {
         return ResultJson.success(brandService.updateById(pmsBrand),message);
     }
 
+    @GetMapping("/getByids")
+    ResultJson getids(Long[] brandIds){
+        List<PmsBrand> list = new ArrayList<>();
+        for(Long id : brandIds){
+            list.add(brandService.getById(id));
+        }
+        System.out.println(list.toString());
+        return ResultJson.success(list,"品牌获取成功");
+    }
 
 
 }

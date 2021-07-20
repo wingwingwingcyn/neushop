@@ -59,12 +59,22 @@ public class PmsProductController {
         return ResultJson.success(productService.page(new Page<>(pageNo,pageSize)));
     }
 
+    @GetMapping("/getProductByName")
+    ResultJson getpbyname(String name){
+        return ResultJson.success(productService.list(name));
+    }
+
     @GetMapping("/getData")
     ResultJson getData() {
         Map<String, List> map = new HashMap<>();
         map.put("brands",brandService.getAll());
         map.put("categorys",categoryService.getAll(0L));
         return ResultJson.success(map);
+    }
+
+    @GetMapping("/getByCategory")
+    ResultJson getcate(Long categoryId){
+        return ResultJson.success(productService.list2(categoryId));
     }
 
     @GetMapping("/getAttr")
