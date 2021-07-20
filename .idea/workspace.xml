@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/zym" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2db7bfae-f882-4b00-8265-bb00dac42e18" name="Default Changelist" comment="补齐文件" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="zym" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="zym" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1vHnY0OaSJXDrp2xpwkErNOizec" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/dongbeiparent" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.GateWayApp">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cyn.util.Generator" />
+      <module name="generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cyn.CustomerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GateWayApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cyn.GateWayApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GateWayApp" />
+        <item itemvalue="Spring Boot.CustomerApp" />
+        <item itemvalue="Application.Generator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2db7bfae-f882-4b00-8265-bb00dac42e18" name="Default Changelist" comment="" />
+      <created>1626227925428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626227925428</updated>
+      <workItem from="1626227926591" duration="10572000" />
+      <workItem from="1626271162169" duration="2066000" />
+      <workItem from="1626311442039" duration="5193000" />
+      <workItem from="1626328765669" duration="1728000" />
+      <workItem from="1626398253095" duration="6341000" />
+      <workItem from="1626599044871" duration="638000" />
+      <workItem from="1626656473496" duration="42000" />
+      <workItem from="1626661433278" duration="139000" />
+      <workItem from="1626661664686" duration="2800000" />
+      <workItem from="1626684065803" duration="1433000" />
+      <workItem from="1626685516123" duration="1379000" />
+      <workItem from="1626745571059" duration="6133000" />
+      <workItem from="1626764205039" duration="367000" />
+    </task>
+    <task id="LOCAL-00001" summary="地址模块后端做完了，如果有的话得先改bootstrap的ip和头字段，再到一个vant的小库，用于加载时间，有一点缺陷就是如果是默认收货地址，点修改时候进去的Button不是选中状态，但是可以修改默认收货地址">
+      <created>1626313504512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626313504512</updated>
+    </task>
+    <task id="LOCAL-00002" summary="小添加">
+      <created>1626428878640</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626428878640</updated>
+    </task>
+    <task id="LOCAL-00003" summary="小添加">
+      <created>1626752095859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626752095859</updated>
+    </task>
+    <task id="LOCAL-00004" summary="不用理，莫名其妙">
+      <created>1626762229136</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626762229136</updated>
+    </task>
+    <task id="LOCAL-00005" summary="补齐文件">
+      <created>1626763012477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626763012477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/git本地仓库/gitres/newshopp/gateway/src/main/java" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/zym" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="地址模块后端做完了，如果有的话得先改bootstrap的ip和头字段，再到一个vant的小库，用于加载时间，有一点缺陷就是如果是默认收货地址，点修改时候进去的Button不是选中状态，但是可以修改默认收货地址" />
+    <MESSAGE value="小添加" />
+    <MESSAGE value="不用理，莫名其妙" />
+    <MESSAGE value="补齐文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="补齐文件" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="230" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626228477931">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="230" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1626228477931" />
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626275876784">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626275876784" />
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1626228330818">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="505" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1549.831@0.0.1549.831" timestamp="1626228330818" />
+    <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1626762662193">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1626762662193" />
+    <state x="555" y="171" key="FileChooserDialogImpl" timestamp="1626338538800">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="555" y="171" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1626338538800" />
+    <state x="596" y="317" key="Github.CreateGistDialog" timestamp="1626315006454">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="596" y="317" key="Github.CreateGistDialog/0.0.1549.831@0.0.1549.831" timestamp="1626315006454" />
+    <state width="1506" height="210" key="GridCell.Tab.0.bottom" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.0.center" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.0.left" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.0.right" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.1.bottom" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.1.center" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.1.left" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state width="1506" height="210" key="GridCell.Tab.1.right" timestamp="1626763813028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="210" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626763813028" />
+    <state x="148" y="66" key="MergeDialog" timestamp="1626762098134">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626762098134" />
+    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626762102647">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626762102647" />
+    <state x="255" y="0" key="SettingsEditor" timestamp="1626762900976">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="255" y="0" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1626762900976" />
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626763231028">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1626763231028" />
+    <state x="590" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626763377749">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="590" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.831@0.0.1549.831" timestamp="1626763377749" />
+    <state x="556" y="128" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626761991647">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="556" y="128" key="git4idea.branch.GitSmartOperationDialog/0.0.1549.831@0.0.1549.831" timestamp="1626761991647" />
+    <state x="551" y="315" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1626661686536">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="551" y="315" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1549.831@0.0.1549.831" timestamp="1626661686536" />
+    <state x="366" y="76" key="new project wizard" timestamp="1626338900211">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="366" y="76" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1626338900211" />
+  </component>
+</project>

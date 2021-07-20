@@ -1,0 +1,82 @@
+Index: customer/src/main/resources/bootstrap.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8081\r\nspring:\r\n  application:\r\n    name: customer\r\n  profiles:\r\n    active: datasource,regist,minio,mybatis\r\n  cloud:\r\n    nacos:\r\n      config:\r\n        server-addr: 192.168.80.128:8848\r\n        prefix: cyn\r\n        file-extension: yml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- customer/src/main/resources/bootstrap.yml	(revision 08255012c15b7178cc03e7ea2077dc94742b788a)
++++ customer/src/main/resources/bootstrap.yml	(date 1626228747590)
+@@ -1,5 +1,5 @@
+ server:
+-  port: 8081
++  port: 8083
+ spring:
+   application:
+     name: customer
+@@ -8,6 +8,6 @@
+   cloud:
+     nacos:
+       config:
+-        server-addr: 192.168.80.128:8848
+-        prefix: cyn
++        server-addr: 192.168.80.151:8848
++        prefix: zym
+         file-extension: yml
+\ No newline at end of file
+Index: product/src/main/resources/bootstrap.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8082\r\nspring:\r\n  application:\r\n    name: product\r\n  profiles:\r\n    active: datasource,regist,mybatis\r\n  cloud:\r\n    nacos:\r\n      config:\r\n        server-addr: 192.168.80.128:8848\r\n        prefix: cyn\r\n        file-extension: yml\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- product/src/main/resources/bootstrap.yml	(revision 08255012c15b7178cc03e7ea2077dc94742b788a)
++++ product/src/main/resources/bootstrap.yml	(date 1626228196236)
+@@ -8,6 +8,6 @@
+   cloud:
+     nacos:
+       config:
+-        server-addr: 192.168.80.128:8848
+-        prefix: cyn
++        server-addr: 192.168.80.151:8848
++        prefix: zym
+         file-extension: yml
+Index: admin/src/main/resources/bootstrap.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8081\r\nspring:\r\n  application:\r\n    name: admin\r\n  profiles:\r\n    active: datasource,regist,minio,mybatis\r\n  cloud:\r\n    nacos:\r\n      config:\r\n        server-addr: 192.168.80.128:8848\r\n        prefix: cyn\r\n        file-extension: yml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- admin/src/main/resources/bootstrap.yml	(revision 08255012c15b7178cc03e7ea2077dc94742b788a)
++++ admin/src/main/resources/bootstrap.yml	(date 1626228152368)
+@@ -8,6 +8,6 @@
+   cloud:
+     nacos:
+       config:
+-        server-addr: 192.168.80.128:8848
+-        prefix: cyn
++        server-addr: 192.168.80.151:8848
++        prefix: zym
+         file-extension: yml
+\ No newline at end of file
+Index: gateway/src/main/resources/bootstrap.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server:\r\n  port: 8090\r\nspring:\r\n  application:\r\n    name: gateway\r\n  profiles:\r\n    active: gateway,regist\r\n  cloud:\r\n    nacos:\r\n      config:\r\n        server-addr: 192.168.80.128:8848\r\n        prefix: cyn\r\n        file-extension: yml
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gateway/src/main/resources/bootstrap.yml	(revision 08255012c15b7178cc03e7ea2077dc94742b788a)
++++ gateway/src/main/resources/bootstrap.yml	(date 1626228152334)
+@@ -8,6 +8,6 @@
+   cloud:
+     nacos:
+       config:
+-        server-addr: 192.168.80.128:8848
+-        prefix: cyn
++        server-addr: 192.168.80.151:8848
++        prefix: zym
+         file-extension: yml
+\ No newline at end of file
