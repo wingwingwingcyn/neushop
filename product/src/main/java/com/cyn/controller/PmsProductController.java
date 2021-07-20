@@ -10,6 +10,7 @@ import com.cyn.pojo.PmsSpuValue;
 import com.cyn.pojo.PmsStock;
 import com.cyn.service.*;
 import com.cyn.util.ResultJson;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -84,6 +85,61 @@ public class PmsProductController {
         map.put("skus",skuService.getByCategory(categoryIds));
         return ResultJson.success(map);
     }
+
+
+    @GetMapping("/getProductById")
+    ResultJson getProductById(Long productId){
+        return ResultJson.success(productService.getById(productId));
+    }
+
+    @GetMapping("/getSkuValueByProductId")
+    ResultJson getSkuValueByProductId(Long productId){
+        return ResultJson.success(skuValueService.skuValueList(productId));
+    }
+
+    @GetMapping("/getSpuValueByProductId")
+    ResultJson getSpuValueByProductId(Long productId){
+        return ResultJson.success(spuValueService.spuValueList(productId));
+    }
+
+    @GetMapping("/getStockByProductId")
+    ResultJson getStockByProductId(Long productId){
+        return ResultJson.success(stockService.stockList(productId));
+    }
+
+
+    //把skuValue里面的value由字符串转化为数组
+    @GetMapping("/getSkuValueAsList")
+    ResultJson getSkuValueAsList(Long productId){
+        List<PmsSkuValue> pmsList = skuValueService.skuValueList(productId);
+        List<String> string0 = new ArrayList<>();
+        List<String> string1 = new ArrayList<>();
+        String[] string = null;
+        List<String> strings = new ArrayList<>();
+        List<List> finalList = new ArrayList<>();
+
+        //把value转化为数组存放,下面的步骤都是去除掉双引号、方框之类的
+        for (int i = 0; i < pmsList.size(); i++){
+            strings.add(StringUtils.strip(pmsList.get(i).getValue(),"[]"));
+            string = strings.get(i).split(",");
+            if (i == 0){
+                for (int j = 0 ; j < string.length ; j++){
+                    String s = string[j].replaceAll("\"","");
+                    string0.add(s);
+                }
+            }else {
+                for (int j = 0 ; j < string.length ; j++){
+                    String s = string[j].replaceAll("\"","");
+                    string1.add(s);
+                }
+            }
+        }
+        finalList.add(string0);
+        finalList.add(string1);
+        return ResultJson.success(finalList);
+    }
+
+
     @PostMapping("/add")
     @Transactional
     ResultJson add(PmsProduct pmsProduct, MultipartFile file, MultipartFile[] files, String[] spus, String[] skus, String[] stocks) throws IOException {
