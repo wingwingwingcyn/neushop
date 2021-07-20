@@ -8,6 +8,6 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 192.168.80.128:8848
-        prefix: cyn
+        server-addr: 192.168.217.139:8849
+        prefix: neu
         file-extension: yml
