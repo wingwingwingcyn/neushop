@@ -1,6 +1,7 @@
 package com.cyn.controller;
 
 
+import com.cyn.pojo.Brand;
 import com.cyn.pojo.PmsBrand;
 import com.cyn.service.AdminService;
 import com.cyn.service.IPmsBrandService;
@@ -59,12 +60,22 @@ public class PmsBrandController {
 
     @GetMapping("/getByids")
     ResultJson getids(Long[] brandIds){
+        List<Brand> list2 = new ArrayList<>();
         List<PmsBrand> list = new ArrayList<>();
+        Brand brand2 = new Brand();
+        brand2.setText("选择品牌");
+        brand2.setValue((long) 0);
+        list2.add(brand2);
         for(Long id : brandIds){
             list.add(brandService.getById(id));
         }
-        System.out.println(list.toString());
-        return ResultJson.success(list,"品牌获取成功");
+        for(PmsBrand pb : list){
+            Brand brand = new Brand();
+            brand.setText(pb.getName());
+            brand.setValue(pb.getId());
+            list2.add(brand);
+        }
+        return ResultJson.success(list2,"品牌获取成功");
     }
 
 

@@ -74,6 +74,11 @@ public class PmsProduct extends BasePojo {
      */
     private Integer active;
 
+   /**
+     * 总销量
+     */
+    private Integer sold;
+
 
     /**
      * 商品详情
