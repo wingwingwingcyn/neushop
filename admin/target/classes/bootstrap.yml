@@ -8,6 +8,11 @@ spring:
   cloud:
     nacos:
       config:
+<<<<<<<< HEAD:admin/target/classes/bootstrap.yml
         server-addr: 192.168.80.151:8848
         prefix: zym
+========
+        server-addr: 192.168.182.10:8848
+        prefix: mz
+>>>>>>>> origin/rmz:admin/src/main/resources/bootstrap.yml
         file-extension: yml

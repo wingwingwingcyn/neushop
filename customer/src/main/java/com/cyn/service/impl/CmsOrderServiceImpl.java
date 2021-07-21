@@ -27,12 +27,9 @@ import java.util.List;
 public class CmsOrderServiceImpl extends ServiceImpl<CmsOrderMapper, CmsOrder> implements ICmsOrderService {
     @Resource
     CmsOrderMapper orderMapper;
+
     @Override
-    public List<OrderInformation> getOrders(String name) {
-        QueryWrapper<OrderInformation> wrapper=new QueryWrapper<>();
-        if(StringUtils.isNotBlank(name)){
-            wrapper.like("nicky_name",name);
-        }
+    public List<OrderInformation> getOrders() {
         return orderMapper.getOrderList();
     }
 
