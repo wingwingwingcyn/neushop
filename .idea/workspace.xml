@@ -20,21 +20,18 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/zym" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/ljx" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a760539-0764-4a5c-a534-10c1414cf33a" name="Default Changelist" comment="meit">
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsCustomerAddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsCustomerAddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsCustomerAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsCustomerAddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsCustomerAddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsCustomerAddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/cyn/pojo/CmsShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/cyn/pojo/CmsShoppingCart.java" afterDir="false" />
+    <list default="true" id="2a760539-0764-4a5c-a534-10c1414cf33a" name="Default Changelist" comment="小更新">
+      <change afterPath="$PROJECT_DIR$/product/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_7_20_14_19__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_7_20_14_19__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_19_16_45__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_19_16_45__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +63,18 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApp">
+  <component name="RunManager" selected="Spring Boot.ProductApp">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <extension name="coverage">
@@ -93,10 +101,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cyn.ProductApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CustomerApp" />
+        <item itemvalue="Spring Boot.ProductApp" />
         <item itemvalue="Spring Boot.GateWayApp" />
+        <item itemvalue="Spring Boot.CustomerApp" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +130,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626784083740</updated>
-      <workItem from="1626784086621" duration="3022000" />
+      <workItem from="1626784086621" duration="4968000" />
+      <workItem from="1626831440356" duration="3712000" />
     </task>
     <task id="LOCAL-00001" summary="别报错大哥，我真的回滚吐了">
       <created>1626789698990</created>
@@ -117,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626789698990</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="小更新">
+      <created>1626790015646</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626790015646</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +169,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/zym" />
+                        <option value="origin/ljx" />
                       </list>
                     </value>
                   </entry>
@@ -155,56 +185,61 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="meit" />
     <MESSAGE value="别报错大哥，我真的回滚吐了" />
-    <option name="LAST_COMMIT_MESSAGE" value="别报错大哥，我真的回滚吐了" />
+    <MESSAGE value="小更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="小更新" />
   </component>
   <component name="WindowStateProjectService">
     <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626786885132">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626786885132" />
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1626789668513">
+    <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1626791690792">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1626789668513">
+    <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791690792" />
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.1.center" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.1.bottom" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.1.left" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.1.center" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state width="1506" height="213" key="GridCell.Tab.1.right" timestamp="1626789668513">
+    <state width="1506" height="213" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.1.left" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626789668513" />
-    <state x="148" y="66" key="MergeDialog" timestamp="1626789906334">
+    <state width="1506" height="213" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state width="1506" height="213" key="GridCell.Tab.1.right" timestamp="1626835104702">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626789906334" />
-    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626789924832">
+    <state width="1506" height="213" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
+    <state x="148" y="66" key="MergeDialog" timestamp="1626791479735">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626789924832" />
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626789959313">
+    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791479735" />
+    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626791479739">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1626789959313" />
+    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791479739" />
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626790044352">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1626790044352" />
   </component>
 </project>
