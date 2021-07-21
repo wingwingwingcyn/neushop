@@ -181,15 +181,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RunManager" selected="Spring Boot.ProductApp">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -238,6 +236,8 @@
         <item itemvalue="Spring Boot.ProductApp" />
         <item itemvalue="Spring Boot.GateWayApp" />
         <item itemvalue="Spring Boot.AdminApp" />
+        <item itemvalue="Spring Boot.ProductApp" />
+        <item itemvalue="Spring Boot.GateWayApp" />
       </list>
     </recent_temporary>
   </component>
