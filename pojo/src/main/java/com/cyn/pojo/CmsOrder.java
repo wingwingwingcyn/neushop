@@ -44,5 +44,24 @@ public class CmsOrder extends BasePojo {
      */
     private Integer stateId;
 
+    /**
+     * 商品数量
+     */
+    private Integer productNum;
+
+    /**
+     * 商品详情
+     */
+    private String detail;
+
+    /**
+     * 商品名称
+     */
+    private String productName;
+
+    /**
+     * 商品图片
+     */
+    private String img;
 
 }
