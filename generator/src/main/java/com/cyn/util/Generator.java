@@ -24,7 +24,7 @@ public class Generator {
         mpg.setGlobalConfig(gc);
         // 定义pojo路径
         String pojopath = path + "/pojo";
-        String othenpath = path + "/product";
+        String othenpath = path + "/customer";
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://192.168.80.128:3306/shop?useUnicode=true&useSSL=false&characterEncoding=utf8");
@@ -62,7 +62,7 @@ public class Generator {
 
         // 写于父类中的公共字段
         strategy.setSuperEntityColumns("id");
-        strategy.setInclude("pms_add_cart");
+        strategy.setInclude("cms_footprint");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
