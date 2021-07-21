@@ -60,6 +60,11 @@ public class PmsProductController {
         return ResultJson.success(productService.page(new Page<>(pageNo,pageSize)));
     }
 
+    @GetMapping("/getall")
+    ResultJson getall(){
+        return ResultJson.success(productService.list());
+    }
+
     @GetMapping("/getProductByName")
     ResultJson getpbyname(String name){
         return ResultJson.success(productService.list(name));
@@ -75,6 +80,8 @@ public class PmsProductController {
 
     @GetMapping("/getByCategory")
     ResultJson getcate(Long categoryId){
+        System.out.println(categoryId);
+        System.out.println(productService.list2(categoryId));
         return ResultJson.success(productService.list2(categoryId));
     }
 
