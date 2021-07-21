@@ -20,18 +20,23 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/ljx" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/zym" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a760539-0764-4a5c-a534-10c1414cf33a" name="Default Changelist" comment="小更新">
-      <change afterPath="$PROJECT_DIR$/product/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_7_20_14_19__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2021_7_20_14_19__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_19_16_45__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_7_19_16_45__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsShoppingCartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsShoppingCartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsShoppingCartServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsAddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsAddCartController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1vZyojVHL5XrlZYwJHWgAvfZzIo" />
   <component name="ProjectLevelVcsManager">
@@ -63,7 +69,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductApp">
+  <component name="RunManager" selected="Spring Boot.CustomerApp">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -116,9 +122,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CustomerApp" />
         <item itemvalue="Spring Boot.ProductApp" />
         <item itemvalue="Spring Boot.GateWayApp" />
-        <item itemvalue="Spring Boot.CustomerApp" />
       </list>
     </recent_temporary>
   </component>
@@ -189,54 +195,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="小更新" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626786885132">
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626856897686">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626786885132" />
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626856897686" />
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1626791690792">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791690792" />
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.1.bottom" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.1.center" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.1.center" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.1.left" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.1.left" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state width="1506" height="213" key="GridCell.Tab.1.right" timestamp="1626835104702">
+    <state width="1506" height="213" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state width="1506" height="213" key="GridCell.Tab.1.right" timestamp="1626860828988">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626835104702" />
-    <state x="148" y="66" key="MergeDialog" timestamp="1626791479735">
+    <state width="1506" height="213" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
+    <state x="148" y="66" key="MergeDialog" timestamp="1626840424888">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791479735" />
-    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626791479739">
+    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626840424888" />
+    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626840433934">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791479739" />
+    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626840433934" />
     <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626790044352">
       <screen x="0" y="0" width="1549" height="831" />
     </state>

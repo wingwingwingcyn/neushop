@@ -2,6 +2,7 @@ package com.cyn.controller;
 
 
 import com.cyn.pojo.CmsShoppingCart;
+import com.cyn.pojo.PmsAddCart;
 import com.cyn.service.ICmsShoppingCartService;
 import com.cyn.util.ResultJson;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +28,16 @@ public class CmsShoppingCartController {
     }
     @PostMapping("/del")
     ResultJson del(CmsShoppingCart cmsShoppingCart) {
+        System.out.println(cmsShoppingCart);
         return ResultJson.success(cmsShoppingCartService.updateById(cmsShoppingCart),"删除商品成功！");
+    }
+    @PostMapping("/delAll")
+    ResultJson  delAll(){
+        return ResultJson.success(cmsShoppingCartService.delAll());
+    }
+    @PostMapping("/add")
+    ResultJson add(CmsShoppingCart pmsAddCart){
+        return ResultJson.success(cmsShoppingCartService.save(pmsAddCart), "添加购物车成功");
     }
 
 }

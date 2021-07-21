@@ -28,4 +28,16 @@ public class CmsShoppingCartServiceImpl extends ServiceImpl<CmsShoppingCartMappe
         }
         return this.list(wrapper);
     }
+
+    @Override
+    public String delAll() {
+        QueryWrapper<CmsShoppingCart> wrapper=new QueryWrapper<>();
+        wrapper.eq("active",1);
+        List<CmsShoppingCart> cmsShoppingCarts = this.list(wrapper);
+        cmsShoppingCarts.forEach(cmsShoppingCart -> {
+            cmsShoppingCart.setActive(0);
+        });
+        this.updateBatchById(cmsShoppingCarts);
+        return "";
+    }
 }

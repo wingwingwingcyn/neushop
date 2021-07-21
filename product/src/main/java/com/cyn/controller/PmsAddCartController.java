@@ -28,10 +28,7 @@ public class PmsAddCartController {
     IPmsAddCartService addCartService;
 
 
-    @PostMapping("/add")
-    ResultJson add(PmsAddCart pmsAddCart){
-        return ResultJson.success(addCartService.save(pmsAddCart), "添加购物车成功");
-    }
+
 
 
 }
