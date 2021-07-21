@@ -22,131 +22,17 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/zym" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e028e05e-1e5b-4858-a67a-42e50e3dfe0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/AdminApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/config/AdminConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/ImgController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/UmsResourceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/UmsRoleController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/UmsRoleResourceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/UmsRoleUserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/controller/UmsUserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/ImgMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/ImgMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsResourceMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsResourceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleResourceMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleResourceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleUserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsRoleUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsUserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/mapper/UmsUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IImgService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IUmsResourceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IUmsRoleResourceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IUmsRoleService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IUmsRoleUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/IUmsUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/ImgServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/UmsResourceServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/UmsRoleResourceServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/UmsRoleServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/UmsRoleUserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/target/classes/com/cyn/service/impl/UmsUserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bus/target/classes/com/cyn/config/AdminConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bus/target/classes/com/cyn/config/DefaultException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/target/classes/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/cyn/GateWayApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/target/classes/com/cyn/config/UserFilter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/BasePojo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/CmsCustomer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/CmsCustomerAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/CmsOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/CmsShoppingCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/CmsState.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/Img.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/OrderInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsAddCart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsBrand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsSku.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsSkuValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsSpu.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsSpuValue.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsStock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/UmsResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/UmsRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/UmsRoleResource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/UmsRoleUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/UmsUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/util/ResultCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/util/ResultJson.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/ProductApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsAddCartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsBrandController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsCategoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsSkuController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsSkuValueController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsSpuController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsSpuValueController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsStockController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsAddCartMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsAddCartMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsBrandMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsBrandMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsCategoryMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsCategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsProductMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSkuMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSkuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSkuValueMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSkuValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSpuMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSpuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSpuValueMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsSpuValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsStockMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/mapper/PmsStockMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/AdminService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsAddCartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsBrandService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsCategoryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsSkuService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsSkuValueService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsSpuService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsSpuValueService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/IPmsStockService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsAddCartServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsBrandServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsCategoryServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsProductServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsSkuServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsSkuValueServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsSpuServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsSpuValueServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/service/impl/PmsStockServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/com/cyn/mapper/UmsResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/com/cyn/mapper/UmsResourceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/cyn/service/IPmsAddCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/cyn/service/IPmsAddCartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/target/classes/com/cyn/pojo/PmsProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsBrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsBrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsProductController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +40,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="rmz" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -249,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626755465992</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="计划进行主页与商品详情页的最后一次整合">
+      <created>1626833117463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626833117463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +161,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/zym" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -278,53 +176,66 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="计划进行主页与商品详情页的最后一次整合" />
+    <option name="LAST_COMMIT_MESSAGE" value="计划进行主页与商品详情页的最后一次整合" />
   </component>
   <component name="WindowStateProjectService">
     <state x="967" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1626754606812">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="967" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1549.840@0.0.1549.840" timestamp="1626754606812" />
-    <state x="386" y="7" key="CommitChangelistDialog2" timestamp="1626755465392">
+    <state x="386" y="7" key="CommitChangelistDialog2" timestamp="1626833116967">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="386" y="7" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1626755465392" />
-    <state x="148" y="67" key="DiffContextDialog" timestamp="1626755440701">
+    <state x="386" y="7" key="CommitChangelistDialog2/0.0.1549.840@0.0.1549.840" timestamp="1626833116967" />
+    <state x="148" y="67" key="DiffContextDialog" timestamp="1626832996546">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="148" y="67" key="DiffContextDialog/0.0.1549.840@0.0.1549.840" timestamp="1626755440701" />
-    <state width="1506" height="235" key="GridCell.Tab.0.bottom" timestamp="1626766925614">
+    <state x="148" y="67" key="DiffContextDialog/0.0.1549.840@0.0.1549.840" timestamp="1626832996546" />
+    <state width="1506" height="306" key="GridCell.Tab.0.bottom" timestamp="1626833746134">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.0.center" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.0.bottom/0.0.1549.840@0.0.1549.840" timestamp="1626833746134" />
+    <state width="1506" height="306" key="GridCell.Tab.0.center" timestamp="1626833746134">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.0.left" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.0.center/0.0.1549.840@0.0.1549.840" timestamp="1626833746134" />
+    <state width="1506" height="306" key="GridCell.Tab.0.left" timestamp="1626833746134">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.0.right" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.0.left/0.0.1549.840@0.0.1549.840" timestamp="1626833746134" />
+    <state width="1506" height="306" key="GridCell.Tab.0.right" timestamp="1626833746134">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.1.bottom" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.0.right/0.0.1549.840@0.0.1549.840" timestamp="1626833746134" />
+    <state width="1506" height="306" key="GridCell.Tab.1.bottom" timestamp="1626833746135">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.1.center" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.1.bottom/0.0.1549.840@0.0.1549.840" timestamp="1626833746135" />
+    <state width="1506" height="306" key="GridCell.Tab.1.center" timestamp="1626833746135">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.1.left" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.1.center/0.0.1549.840@0.0.1549.840" timestamp="1626833746135" />
+    <state width="1506" height="306" key="GridCell.Tab.1.left" timestamp="1626833746135">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
-    <state width="1506" height="235" key="GridCell.Tab.1.right" timestamp="1626766925614">
+    <state width="1506" height="306" key="GridCell.Tab.1.left/0.0.1549.840@0.0.1549.840" timestamp="1626833746135" />
+    <state width="1506" height="306" key="GridCell.Tab.1.right" timestamp="1626833746135">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state width="1506" height="235" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1626766925614" />
+    <state width="1506" height="306" key="GridCell.Tab.1.right/0.0.1549.840@0.0.1549.840" timestamp="1626833746135" />
+    <state x="305" y="76" key="Maven.ArtifactSearchDialog" timestamp="1626833194316">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="305" y="76" key="Maven.ArtifactSearchDialog/0.0.1549.840@0.0.1549.840" timestamp="1626833194316" />
+    <state x="77" y="77" key="MergeDialog" timestamp="1626833162487">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="77" y="77" key="MergeDialog/0.0.1549.840@0.0.1549.840" timestamp="1626833162487" />
+    <state x="413" y="181" key="MultipleFileMergeDialog" timestamp="1626833162493">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="413" y="181" key="MultipleFileMergeDialog/0.0.1549.840@0.0.1549.840" timestamp="1626833162493" />
     <state x="284" y="65" key="SettingsEditor" timestamp="1626754098011">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
@@ -333,9 +244,9 @@
       <screen x="0" y="0" width="1549" height="840" />
     </state>
     <state x="367" y="154" key="Vcs.Push.Dialog.v2/0.0.1549.840@0.0.1549.840" timestamp="1626766992623" />
-    <state x="548" y="133" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626754161349">
+    <state x="548" y="133" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626832916305">
       <screen x="0" y="0" width="1549" height="840" />
     </state>
-    <state x="548" y="133" key="git4idea.branch.GitSmartOperationDialog/0.0.1549.840@0.0.1549.840" timestamp="1626754161349" />
+    <state x="548" y="133" key="git4idea.branch.GitSmartOperationDialog/0.0.1549.840@0.0.1549.840" timestamp="1626832916305" />
   </component>
 </project>
