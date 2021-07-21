@@ -23,6 +23,10 @@ public class OrderInformation extends BasePojo {
     /**
      * 客户id
      */
+    private Long id;
+    /**
+     * 客户id
+     */
     private Long customerId;
 
     /**

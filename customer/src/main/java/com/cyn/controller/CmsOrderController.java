@@ -2,6 +2,7 @@ package com.cyn.controller;
 
 
 import com.cyn.pojo.CmsCustomer;
+import com.cyn.pojo.CmsOrder;
 import com.cyn.pojo.OrderInformation;
 import com.cyn.pojo.PmsProduct;
 import com.cyn.service.ICmsOrderService;
@@ -36,50 +37,28 @@ public class CmsOrderController {
     @GetMapping("/list")
     ResultJson list() throws InterruptedException {
         List<OrderInformation> orderList=cmsOrderService.getOrders();
-        for(OrderInformation value:orderList){
-            if (value.getStateId()==1){
-                value.setStateName("待付款");
-            }else if (value.getStateId()==2){
-                value.setStateName("待发货");
-            }else if (value.getStateId()==3){
-                value.setStateName("待收货");
-            }else if (value.getStateId()==4){
-                value.setStateName("待评价");
-            }else if (value.getStateId()==5){
-                value.setStateName("售后/退款");
-            }else{
-                value.setStateName("已结束");
-            }
-        }
         return ResultJson.success(orderList) ;
     }
 
     @GetMapping("/find")
     ResultJson find(String name) throws InterruptedException {
         List<OrderInformation> orderList=cmsOrderService.getOrders();
-        for(OrderInformation value:orderList){
-            if (value.getStateId()==1){
-                value.setStateName("待付款");
-            }else if (value.getStateId()==2){
-                value.setStateName("待发货");
-            }else if (value.getStateId()==3){
-                value.setStateName("待收货");
-            }else if (value.getStateId()==4){
-                value.setStateName("待评价");
-            }else if (value.getStateId()==5){
-                value.setStateName("售后/退款");
-            }else{
-                value.setStateName("已结束");
-            }
-        }
         List<OrderInformation> orderList2=new ArrayList<>();
-        System.out.println("=======name========"+name);
         for(OrderInformation value:orderList){
             if (value.getNickyName().contains(name)){
                 orderList2.add(value);
             }
         }
         return ResultJson.success(orderList2) ;
+    }
+
+    @GetMapping("/deliver")
+    ResultJson deliver(Long id) throws InterruptedException {
+        CmsOrder cmsOrder=cmsOrderService.getById(id);
+        cmsOrder.setStateId(3);
+        cmsOrderService.updateById(cmsOrder);
+        List<OrderInformation> orderList=cmsOrderService.getOrders();
+        return ResultJson.success(orderList) ;
     }
 
     @GetMapping("/getone")

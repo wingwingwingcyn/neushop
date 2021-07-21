@@ -113,6 +113,17 @@ public class PmsProductController {
         return ResultJson.success("","添加成功");
     }
 
-
+    @GetMapping("/put")
+    ResultJson putOn(Long id,Integer pageNo, Integer pageSize) throws InterruptedException {
+        System.out.println(id);
+        PmsProduct pmsProduct=productService.getById(id);
+        if (pmsProduct.getPublishStatus()==0){
+            pmsProduct.setPublishStatus(1);
+        }else{
+            pmsProduct.setPublishStatus(0);
+        }
+        productService.updateById(pmsProduct);
+        return ResultJson.success(productService.page(new Page<>(pageNo,pageSize)));
+    }
 
 }

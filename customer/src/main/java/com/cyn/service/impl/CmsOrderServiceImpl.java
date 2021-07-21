@@ -30,7 +30,20 @@ public class CmsOrderServiceImpl extends ServiceImpl<CmsOrderMapper, CmsOrder> i
 
     @Override
     public List<OrderInformation> getOrders() {
-        return orderMapper.getOrderList();
+        List<OrderInformation> orderInformations=orderMapper.getOrderList();
+        for(OrderInformation value:orderInformations){
+            if (value.getStateId()==1){
+                value.setStateName("待付款");
+            }else if (value.getStateId()==2){
+                value.setStateName("待发货");
+            }else if (value.getStateId()==3){
+                value.setStateName("待收货");
+            }else{
+                value.setStateName("已结束");
+            }
+        }
+        return orderInformations;
+//        return orderMapper.getOrderList();
     }
 
 }

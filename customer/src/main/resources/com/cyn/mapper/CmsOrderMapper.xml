@@ -3,7 +3,7 @@
 <mapper namespace="com.cyn.mapper.CmsOrderMapper">
     <select id="getOrderList" resultType="com.cyn.pojo.OrderInformation" parameterType="java.lang.Long">
         select
-            b.id,b.account,b.nicky_name,c.id,c.name,c.price,a.state_id
+            a.id,a.customer_id,b.account,b.nicky_name,c.id,c.name,c.price,a.state_id
         from
             cms_order as a
         inner join
