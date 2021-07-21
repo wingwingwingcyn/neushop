@@ -2,6 +2,7 @@ package com.cyn.mapper;
 
 import com.cyn.pojo.PmsAddCart;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>

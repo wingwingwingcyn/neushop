@@ -80,8 +80,6 @@ public class PmsProductController {
 
     @GetMapping("/getByCategory")
     ResultJson getcate(Long categoryId){
-        System.out.println(categoryId);
-        System.out.println(productService.list2(categoryId));
         return ResultJson.success(productService.list2(categoryId));
     }
 
