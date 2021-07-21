@@ -55,6 +55,16 @@ public class CmsShoppingCart extends BasePojo {
     private String detail;
 
     /**
+     * 商品详情
+     */
+    private String detail;
+
+    /**
+     * 商品图片
+     */
+    private String img;
+
+    /**
      * 是否有效
      */
     private Integer active;

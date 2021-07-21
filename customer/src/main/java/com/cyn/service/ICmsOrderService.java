@@ -1,11 +1,8 @@
 package com.cyn.service;
 
-import com.cyn.pojo.CmsCustomer;
 import com.cyn.pojo.CmsOrder;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.cyn.pojo.OrderInformation;
-import com.cyn.pojo.PmsProduct;
-import feign.Param;
+import com.cyn.pojo.CmsShoppingCart;
 
 import java.util.List;
 
@@ -18,5 +15,6 @@ import java.util.List;
  * @since 2021-07-12
  */
 public interface ICmsOrderService extends IService<CmsOrder> {
-    List<OrderInformation> getOrders();
+    List<CmsOrder> getOrderById(Long productId);
+    CmsOrder updateState(Long customerId);
 }

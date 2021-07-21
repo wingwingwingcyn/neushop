@@ -4,12 +4,7 @@ package com.cyn.controller;
 import com.cyn.pojo.CmsCustomerAddress;
 import com.cyn.service.ICmsCustomerAddressService;
 import com.cyn.util.ResultJson;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -18,8 +13,8 @@ import javax.annotation.Resource;
  * 顾客地址表 前端控制器
  * </p>
  *
- * @author giegie
- * @since 2021-07-12
+ * @author YanMin zhang
+ * @since 2021-07-14
  */
 @RestController
 @CrossOrigin
@@ -48,12 +43,13 @@ public class CmsCustomerAddressController {
     ResultJson setDefault(Long customerId){
         return ResultJson.success(addressService.setDefault(customerId));
     }
+
     @GetMapping("/getone")
     ResultJson getone(Long chosenAddressId){
         return ResultJson.success(addressService.getById(chosenAddressId));
     }
     @GetMapping("/getDefault")
-    ResultJson getDefault(){
-        return ResultJson.success(addressService.getDefault());
+    ResultJson getDefault(Long cutomerId){
+        return ResultJson.success(addressService.getDefault(cutomerId));
     }
 }

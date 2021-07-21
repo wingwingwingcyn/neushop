@@ -1,11 +1,10 @@
 package com.cyn.controller;
 
 
-import com.cyn.pojo.CmsCustomer;
-import com.cyn.pojo.OrderInformation;
-import com.cyn.pojo.PmsProduct;
+import com.cyn.pojo.CmsOrder;
 import com.cyn.service.ICmsOrderService;
 import com.cyn.util.ResultJson;
+import org.springframework.core.Ordered;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,10 +12,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
 
 /**
  * <p>
@@ -34,57 +31,49 @@ public class CmsOrderController {
     ICmsOrderService cmsOrderService;
 
     @GetMapping("/list")
-    ResultJson list() throws InterruptedException {
-        List<OrderInformation> orderList=cmsOrderService.getOrders();
-        for(OrderInformation value:orderList){
-            if (value.getStateId()==1){
-                value.setStateName("待付款");
-            }else if (value.getStateId()==2){
-                value.setStateName("待发货");
-            }else if (value.getStateId()==3){
-                value.setStateName("待收货");
-            }else if (value.getStateId()==4){
-                value.setStateName("待评价");
-            }else if (value.getStateId()==5){
-                value.setStateName("售后/退款");
-            }else{
-                value.setStateName("已结束");
-            }
-        }
-        return ResultJson.success(orderList) ;
-    }
-
-    @GetMapping("/find")
-    ResultJson find(String name) throws InterruptedException {
-        List<OrderInformation> orderList=cmsOrderService.getOrders();
-        for(OrderInformation value:orderList){
-            if (value.getStateId()==1){
-                value.setStateName("待付款");
-            }else if (value.getStateId()==2){
-                value.setStateName("待发货");
-            }else if (value.getStateId()==3){
-                value.setStateName("待收货");
-            }else if (value.getStateId()==4){
-                value.setStateName("待评价");
-            }else if (value.getStateId()==5){
-                value.setStateName("售后/退款");
-            }else{
-                value.setStateName("已结束");
-            }
-        }
-        List<OrderInformation> orderList2=new ArrayList<>();
-        System.out.println("=======name========"+name);
-        for(OrderInformation value:orderList){
-            if (value.getNickyName().contains(name)){
-                orderList2.add(value);
-            }
-        }
-        return ResultJson.success(orderList2) ;
+    ResultJson list(Long customerId){
+        return ResultJson.success(cmsOrderService.getOrderById(customerId));
     }
 
     @GetMapping("/getone")
-    ResultJson getOne(Long id) {
-        return ResultJson.success(cmsOrderService.getById(id));
+    ResultJson getone(Long orderId){
+        return ResultJson.success(cmsOrderService.getById(orderId),"获取订单成功");
+    }
+
+    @GetMapping("/addorder")
+    ResultJson add(Long productId,Long cutomerId,
+                   Long addressId,
+                   BigDecimal price ,
+                   String detail ,
+                   String img ,
+                   String productName,
+                   Integer productNum ){
+        CmsOrder order = new CmsOrder();
+        order.setProductId(productId);
+        order.setAddressId(addressId);
+        order.setCustomerId(cutomerId);
+        order.setPrice(price);
+        order.setStateId(1);
+        order.setImg(img);
+        order.setProductName(productName);
+        order.setProductNum(productNum);
+        order.setDetail(detail);
+        return ResultJson.success(cmsOrderService.save(order));
+    }
+
+    @GetMapping("/pay")
+    ResultJson pay(Long orderId){
+        CmsOrder o = cmsOrderService.getById(orderId);
+        o.setStateId(2);
+        cmsOrderService.updateById(o);
+        return ResultJson.success(o,"支付成功");
+    }
+    @GetMapping("/take")
+    ResultJson take(Long orderId){
+        CmsOrder o = cmsOrderService.getById(orderId);
+        o.setStateId(4);
+        cmsOrderService.updateById(o);
+        return ResultJson.success(o,"已成功收货");
     }
 
 }
