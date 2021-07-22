@@ -30,54 +30,63 @@ public class CmsFootprintController {
 
 
     @GetMapping("/list")
-    ResultJson list(Integer customerId){
+    ResultJson list(Long customerId){
         return ResultJson.success(footprintService.getFootprint(customerId));
     }
 
     @GetMapping("/listCollection")
-    ResultJson listCollection(Integer customerId){
-        return ResultJson.success(footprintService.getCollections(customerId));
+    ResultJson listCollection(Long customerId){
+        return ResultJson.success(footprintService.getCollection(customerId));
     }
 
     @RequestMapping("/delAll")
-    ResultJson delAll(Integer customerId) {
+    ResultJson delAll(Long customerId) {
         footprintMapper.delAll(customerId);
         return ResultJson.success("删除所有商品足迹成功");
     }
 
     @RequestMapping("/delAllCollection")
-    ResultJson delAllCollection(Integer customerId) {
+    ResultJson delAllCollection(Long customerId) {
         footprintMapper.delAllCollection(customerId);
         return ResultJson.success("删除所有收藏商品成功");
     }
     @GetMapping("/addfootprint")
-    ResultJson add(Integer productId, Integer customerId, String img, BigDecimal price){
-        CmsFootprint fp = new CmsFootprint();
-        fp.setProductId(productId);
-        fp.setCustomerId(customerId);
-        fp.setImg(img);
-        fp.setPrice(price);
-        return ResultJson.success(footprintService.save(fp));
+    ResultJson add(Long productId, Long customerId, String img, BigDecimal price){
+        CmsFootprint cmsFootprint = footprintService.idExist(productId, customerId);
+        if (cmsFootprint == null){
+            CmsFootprint fp = new CmsFootprint();
+            fp.setProductId(productId);
+            fp.setCustomerId(customerId);
+            fp.setImg(img);
+            fp.setPrice(price);
+            footprintService.save(fp);
+        }else {
+            System.out.println(productId);
+        }
+
+        return ResultJson.success(1);
     }
     @GetMapping("/getCollection")
-    ResultJson getCollection(Integer proID, Long isFP){
-        return ResultJson.success(footprintService.getCollection(proID,isFP));
+    ResultJson getCollection(Long customerId){
+        return ResultJson.success(footprintService.getCollection(customerId));
+    }
+    @GetMapping("/isCollection")
+    ResultJson isCollection(Long customerId,Long productId){
+        return ResultJson.success(footprintService.isCollection(customerId, productId));
     }
     @GetMapping("/getFootPrint")
-    ResultJson getFootPrint(Integer produId){
+    ResultJson getFootPrint(Long produId){
         return ResultJson.success(footprintService.getFootPrint(produId));
     }
-
-
     @PostMapping("/setCollection")
-    ResultJson setCollection(Long collOneId, Long collTwoId){
-        if (collOneId != 0){
-            System.out.println(collOneId);
-            return ResultJson.success(footprintService.removeById(collOneId), "取消收藏成功");
-        }else {
-            CmsFootprint co = footprintService.getById(collTwoId);
-            co.setIsFc(1L);
-            return ResultJson.success(footprintService.save(co), "添加收藏成功");
+    ResultJson setCollection(Long customerId,Long productId,Long isFc){
+        CmsFootprint cmsFootprint = footprintService.idExist(productId, customerId);
+        System.out.println(cmsFootprint);
+        if (isFc == 0){
+            cmsFootprint.setIsFc(1L);
+        }else if (isFc == 1){
+            cmsFootprint.setIsFc(0L);
         }
+        return ResultJson.success(footprintService.updateById(cmsFootprint), "修改收藏成功");
     }
 }

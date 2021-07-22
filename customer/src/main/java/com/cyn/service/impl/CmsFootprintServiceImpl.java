@@ -22,10 +22,9 @@ import java.util.List;
 public class CmsFootprintServiceImpl extends ServiceImpl<CmsFootprintMapper, CmsFootprint> implements ICmsFootprintService {
 
     @Override
-    public List<CmsFootprint> getFootprint(Integer customerId) {
+    public List<CmsFootprint> getFootprint(Long customerId) {
         QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
         wrapper.eq("customer_id",customerId);
-        wrapper.eq("is_fc",0);
         List<CmsFootprint> list = this.list(wrapper);
         List<CmsFootprint> result = new ArrayList<>();
         list.forEach(CmsFootprint -> {
@@ -42,7 +41,7 @@ public class CmsFootprintServiceImpl extends ServiceImpl<CmsFootprintMapper, Cms
 //    }
 
     @Override
-    public List<CmsFootprint> getCollections(Integer customerId) {
+    public List<CmsFootprint> getCollection(Long customerId) {
         QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
         wrapper.eq("customer_id",customerId);
         wrapper.eq("is_fc",1);
@@ -53,18 +52,28 @@ public class CmsFootprintServiceImpl extends ServiceImpl<CmsFootprintMapper, Cms
         });
         return result;
     }
-    @Override
-    public CmsFootprint getCollection(Integer proID, Long isFP) {
-        QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
-        wrapper.eq("product_id",proID);
-        wrapper.eq("is_fc",isFP);
-        return this.getOne(wrapper);
-    }
 
     @Override
-    public List<CmsFootprint> getFootPrint(Integer produId) {
+    public List<CmsFootprint> getFootPrint(Long produId) {
         QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
         wrapper.eq("product_id",produId);
         return this.list(wrapper);
+    }
+
+    @Override
+    public Long isCollection(Long customerId, Long productId) {
+        QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
+        wrapper.eq("customer_id",customerId);
+        wrapper.eq("product_id",productId);
+        CmsFootprint cmsFootprint = this.getOne(wrapper);
+        return cmsFootprint.getIsFc();
+    }
+
+    @Override
+    public CmsFootprint idExist(Long productId, Long customerId) {
+        QueryWrapper<CmsFootprint> wrapper = new QueryWrapper<>();
+        wrapper.eq("customer_id",customerId);
+        wrapper.eq("product_id",productId);
+        return this.getOne(wrapper);
     }
 }

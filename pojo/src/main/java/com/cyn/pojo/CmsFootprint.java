@@ -19,9 +19,9 @@ public class CmsFootprint extends BasePojo {
 
     private static final long serialVersionUID = 1L;
 
-    private Integer productId;
+    private Long productId;
 
-    private Integer customerId;
+    private Long customerId;
 
     private String img;
 

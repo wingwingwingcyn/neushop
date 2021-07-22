@@ -14,6 +14,6 @@ import java.util.List;
  * @since 2021-07-21
  */
 public interface CmsFootprintMapper extends BaseMapper<CmsFootprint> {
-    void delAll(Integer customerId);
-    void delAllCollection(Integer customerId);
+    void delAll(Long customerId);
+    void delAllCollection(Long customerId);
 }
