@@ -17,4 +17,5 @@ import java.util.List;
 public interface ICmsOrderService extends IService<CmsOrder> {
     List<CmsOrder> getOrderById(Long productId);
     CmsOrder updateState(Long customerId);
+    Long getId();
 }

@@ -49,7 +49,7 @@ public class CmsCustomerAddressController {
         return ResultJson.success(addressService.getById(chosenAddressId));
     }
     @GetMapping("/getDefault")
-    ResultJson getDefault(Long cutomerId){
-        return ResultJson.success(addressService.getDefault(cutomerId));
+    ResultJson getDefault(Long customerId){
+        return ResultJson.success(addressService.getDefault(customerId));
     }
 }

@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bus" />
-        <module name="gateway" />
-        <module name="product" />
         <module name="pojo" />
-        <module name="customer" />
+        <module name="bus" />
+        <module name="product" />
         <module name="generator" />
         <module name="admin" />
+        <module name="gateway" />
+        <module name="customer" />
       </profile>
     </annotationProcessing>
   </component>

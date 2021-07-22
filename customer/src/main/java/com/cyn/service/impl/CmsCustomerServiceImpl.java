@@ -9,6 +9,7 @@ import com.cyn.pojo.UmsResource;
 import com.cyn.pojo.UmsUser;
 import com.cyn.service.ICmsCustomerService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -52,10 +53,11 @@ public class CmsCustomerServiceImpl extends ServiceImpl<CmsCustomerMapper, CmsCu
         if(!passwordEncoder.matches(password,customer.getPassword())) {
             throw new Exception("用户名或密码错误");
         }
-
+        String token = JWT.create().withClaim("customerId",customer.getId()).sign(Algorithm.HMAC256("zhangyanmin"));
         //用户登录成功
         Map<String,Object> reslut = new HashMap<>();
         reslut.put("customer",customer);
+        reslut.put("token",token);
         return reslut;
     }
 

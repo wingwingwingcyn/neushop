@@ -21,11 +21,9 @@ import java.util.List;
 @Service
 public class CmsShoppingCartServiceImpl extends ServiceImpl<CmsShoppingCartMapper, CmsShoppingCart> implements ICmsShoppingCartService {
     @Override
-    public List<CmsShoppingCart> list(String productName) {
+    public List<CmsShoppingCart> list(Long customerId) {
         QueryWrapper<CmsShoppingCart> wrapper=new QueryWrapper<>();
-        if(StringUtils.isNotBlank(productName)){
-            wrapper.like("product_name",productName);
-        }
+            wrapper.like("customer_id",customerId);
         return this.list(wrapper);
     }
 

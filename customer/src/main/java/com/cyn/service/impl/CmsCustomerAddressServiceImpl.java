@@ -39,10 +39,10 @@ public class CmsCustomerAddressServiceImpl extends ServiceImpl<CmsCustomerAddres
     }
 
     @Override
-    public CmsCustomerAddress getDefault(Long cutomerId) {
+    public CmsCustomerAddress getDefault(Long customerId) {
         QueryWrapper<CmsCustomerAddress> wrapper = new QueryWrapper<>();
         wrapper.eq("is_default",1);
-        wrapper.eq("customer_id",cutomerId);
+        wrapper.eq("customer_id",customerId);
         return this.getOne(wrapper);
     }
 }

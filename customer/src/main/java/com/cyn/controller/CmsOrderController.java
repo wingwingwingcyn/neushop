@@ -41,7 +41,7 @@ public class CmsOrderController {
     }
 
     @GetMapping("/addorder")
-    ResultJson add(Long productId,Long cutomerId,
+    ResultJson add(Long productId,Long customerId,
                    Long addressId,
                    BigDecimal price ,
                    String detail ,
@@ -51,14 +51,15 @@ public class CmsOrderController {
         CmsOrder order = new CmsOrder();
         order.setProductId(productId);
         order.setAddressId(addressId);
-        order.setCustomerId(cutomerId);
+        order.setCustomerId(customerId);
         order.setPrice(price);
         order.setStateId(1);
         order.setImg(img);
         order.setProductName(productName);
         order.setProductNum(productNum);
         order.setDetail(detail);
-        return ResultJson.success(cmsOrderService.save(order));
+        cmsOrderService.save(order);
+        return ResultJson.success(cmsOrderService.getId(),"生成订单");
     }
 
     @GetMapping("/pay")
@@ -75,5 +76,6 @@ public class CmsOrderController {
         cmsOrderService.updateById(o);
         return ResultJson.success(o,"已成功收货");
     }
+
 
 }

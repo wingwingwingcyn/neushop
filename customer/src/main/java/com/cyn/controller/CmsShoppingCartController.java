@@ -23,8 +23,8 @@ public class CmsShoppingCartController {
     @Resource
     ICmsShoppingCartService cmsShoppingCartService;
     @GetMapping("/list")
-    ResultJson list(String productName ){
-        return ResultJson.success(cmsShoppingCartService.list(productName));
+    ResultJson list(Long customerId){
+        return ResultJson.success(cmsShoppingCartService.list(customerId));
     }
     @PostMapping("/del")
     ResultJson del(CmsShoppingCart cmsShoppingCart) {

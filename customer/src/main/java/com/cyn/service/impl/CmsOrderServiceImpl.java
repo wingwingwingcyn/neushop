@@ -8,6 +8,7 @@ import com.cyn.service.ICmsOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.nio.file.Watchable;
 import java.util.List;
 
 /**
@@ -33,5 +34,14 @@ public class CmsOrderServiceImpl extends ServiceImpl<CmsOrderMapper, CmsOrder> i
         wrapper.eq("customer_id",customerId);
         this.update(wrapper);
         return this.getById(customerId);
+    }
+
+    @Override
+    public Long getId() {
+        QueryWrapper<CmsOrder> wrapper = new QueryWrapper<>();
+        wrapper.like("detail","");
+        List<CmsOrder> list = this.list(wrapper);
+        CmsOrder cmsOrder = list.get(list.size()-1);
+        return cmsOrder.getId();
     }
 }
