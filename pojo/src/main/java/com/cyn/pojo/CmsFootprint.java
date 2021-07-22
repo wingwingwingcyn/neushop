@@ -27,5 +27,7 @@ public class CmsFootprint extends BasePojo {
 
     private BigDecimal price;
 
+    private Long isFc;
+
 
 }

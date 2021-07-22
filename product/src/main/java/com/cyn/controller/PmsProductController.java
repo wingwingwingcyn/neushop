@@ -10,6 +10,7 @@ import com.cyn.pojo.PmsSpuValue;
 import com.cyn.pojo.PmsStock;
 import com.cyn.service.*;
 import com.cyn.util.ResultJson;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -59,6 +60,13 @@ public class PmsProductController {
         return ResultJson.success(productService.page(new Page<>(pageNo,pageSize)));
     }
 
+
+    @GetMapping("/getall")
+    ResultJson getall(){
+        return ResultJson.success(productService.list());
+    }
+
+
     @GetMapping("/getData")
     ResultJson getData() {
         Map<String, List> map = new HashMap<>();
@@ -74,6 +82,13 @@ public class PmsProductController {
         map.put("skus",skuService.getByCategory(categoryIds));
         return ResultJson.success(map);
     }
+
+    @GetMapping("/getProductById")
+    ResultJson getProductById(Long productId){
+        return ResultJson.success(productService.getById(productId));
+    }
+
+
     @PostMapping("/add")
     @Transactional
     ResultJson add(PmsProduct pmsProduct, MultipartFile file, MultipartFile[] files, String[] spus, String[] skus, String[] stocks) throws IOException {
