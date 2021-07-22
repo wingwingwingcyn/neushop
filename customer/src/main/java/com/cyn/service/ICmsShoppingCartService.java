@@ -16,4 +16,5 @@ import java.util.List;
 public interface ICmsShoppingCartService extends IService<CmsShoppingCart> {
     List<CmsShoppingCart> list(Long customerId);
     String delAll();
+    CmsShoppingCart getCart(Long proId, String proDetail);
 }

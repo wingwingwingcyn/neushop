@@ -20,32 +20,45 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/zym" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/ljy" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a760539-0764-4a5c-a534-10c1414cf33a" name="Default Changelist" comment="小更新">
+    <list default="true" id="2a760539-0764-4a5c-a534-10c1414cf33a" name="Default Changelist" comment="没有足迹，收藏，饶民泽的小修改">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsFootprintController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller/CmsShoppingCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/ICmsShoppingCartService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/cyn/service/impl/CmsShoppingCartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsOrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/controller/CmsShoppingCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsShoppingCartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/ICmsShoppingCartService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsShoppingCartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/cyn/service/impl/CmsShoppingCartServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsAddCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsAddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/product/target/classes/com/cyn/controller/PmsAddCartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pojo/src/main/java/com/cyn/pojo/PmsProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/pojo/src/main/java/com/cyn/pojo/PmsProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/cyn/controller/PmsProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1vZyojVHL5XrlZYwJHWgAvfZzIo" />
   <component name="ProjectLevelVcsManager">
@@ -62,21 +75,45 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/customer/src/main/java/com/cyn/controller" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApp">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git本地仓库\gitres\newshopp\customer\src\main\java\com\cyn\controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AdminApp">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cyn.controller.Test" />
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cyn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cyn.AdminApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,9 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AdminApp" />
         <item itemvalue="Spring Boot.CustomerApp" />
-        <item itemvalue="Spring Boot.ProductApp" />
         <item itemvalue="Spring Boot.GateWayApp" />
+        <item itemvalue="Spring Boot.ProductApp" />
+        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +177,10 @@
       <updated>1626784083740</updated>
       <workItem from="1626784086621" duration="4968000" />
       <workItem from="1626831440356" duration="3712000" />
+      <workItem from="1626871219012" duration="9858000" />
+      <workItem from="1626916247097" duration="16260000" />
+      <workItem from="1626946032876" duration="1840000" />
+      <workItem from="1626950107573" duration="10439000" />
     </task>
     <task id="LOCAL-00001" summary="别报错大哥，我真的回滚吐了">
       <created>1626789698990</created>
@@ -153,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626790015646</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="先这样，还没做登录，现在去做登录去了，没整合订单和支付，没数据统一">
+      <created>1626860918599</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626860918599</updated>
+    </task>
+    <task id="LOCAL-00004" summary="没有足迹，收藏，饶民泽的小修改">
+      <created>1626940796075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626940796075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +232,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/ljx" />
+                        <option value="origin/ljy" />
                       </list>
                     </value>
                   </entry>
@@ -192,60 +249,86 @@
     <MESSAGE value="meit" />
     <MESSAGE value="别报错大哥，我真的回滚吐了" />
     <MESSAGE value="小更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="小更新" />
+    <MESSAGE value="先这样，还没做登录，现在去做登录去了，没整合订单和支付，没数据统一" />
+    <MESSAGE value="没有足迹，收藏，饶民泽的小修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="没有足迹，收藏，饶民泽的小修改" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626856897686">
+    <state x="401" y="94" key="#Inspections" timestamp="1626925724147">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626856897686" />
+    <state x="401" y="94" key="#Inspections/0.0.1549.831@0.0.1549.831" timestamp="1626925724147" />
+    <state x="255" y="0" key="#Project_Structure" timestamp="1626881658299">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="255" y="0" key="#Project_Structure/0.0.1549.831@0.0.1549.831" timestamp="1626881658299" />
+    <state x="527" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626861137726">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="527" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.831@0.0.1549.831" timestamp="1626861137726" />
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1626925585330">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="580" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1549.831@0.0.1549.831" timestamp="1626925585330" />
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1626791690792">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1626791690792" />
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom" timestamp="1626860828988">
+    <state x="596" y="317" key="Github.CreateGistDialog" timestamp="1626964034535">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.0.center" timestamp="1626860828988">
+    <state x="596" y="317" key="Github.CreateGistDialog/0.0.1549.831@0.0.1549.831" timestamp="1626964034535" />
+    <state width="1506" height="212" key="GridCell.Tab.0.bottom" timestamp="1626965473650">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.0.left" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626965473650" />
+    <state width="1506" height="212" key="GridCell.Tab.0.center" timestamp="1626965473650">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.0.right" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1626965473650" />
+    <state width="1506" height="212" key="GridCell.Tab.0.left" timestamp="1626965473650">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1626965473650" />
+    <state width="1506" height="212" key="GridCell.Tab.0.right" timestamp="1626965473650">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.1.center" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1626965473650" />
+    <state width="1506" height="212" key="GridCell.Tab.1.bottom" timestamp="1626965473651">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.1.left" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1626965473651" />
+    <state width="1506" height="212" key="GridCell.Tab.1.center" timestamp="1626965473651">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state width="1506" height="213" key="GridCell.Tab.1.right" timestamp="1626860828988">
+    <state width="1506" height="212" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1626965473651" />
+    <state width="1506" height="212" key="GridCell.Tab.1.left" timestamp="1626965473650">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1506" height="213" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626860828988" />
-    <state x="148" y="66" key="MergeDialog" timestamp="1626840424888">
+    <state width="1506" height="212" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1626965473650" />
+    <state width="1506" height="212" key="GridCell.Tab.1.right" timestamp="1626965473651">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626840424888" />
-    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626840433934">
+    <state width="1506" height="212" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1626965473651" />
+    <state x="148" y="66" key="MergeDialog" timestamp="1626889968490">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626840433934" />
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626790044352">
+    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626889968490" />
+    <state x="413" y="176" key="MultipleFileMergeDialog" timestamp="1626889968495">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1626790044352" />
+    <state x="413" y="176" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1626889968495" />
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2" timestamp="1626940803518">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="367" y="149" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1626940803518" />
+    <state x="556" y="128" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626889737235">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="556" y="128" key="git4idea.branch.GitSmartOperationDialog/0.0.1549.831@0.0.1549.831" timestamp="1626889737235" />
+    <state x="432" y="189" key="run.anything.popup" timestamp="1626932036627">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="432" y="189" key="run.anything.popup/0.0.1549.831@0.0.1549.831" timestamp="1626932036627" />
   </component>
 </project>

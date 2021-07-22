@@ -37,7 +37,7 @@ public class PmsProduct extends BasePojo {
     /**
      * 类别id
      */
-    private String categoryId;
+    private Long categoryId;
 
     /**
      * 关键词

@@ -3,6 +3,7 @@ package com.cyn.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cyn.pojo.CmsShoppingCart;
 import com.cyn.mapper.CmsShoppingCartMapper;
+import com.cyn.pojo.PmsAddCart;
 import com.cyn.service.ICmsShoppingCartService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
@@ -37,5 +38,13 @@ public class CmsShoppingCartServiceImpl extends ServiceImpl<CmsShoppingCartMappe
         });
         this.updateBatchById(cmsShoppingCarts);
         return "";
+    }
+    @Override
+    public CmsShoppingCart getCart(Long proId, String proDetail) {
+        QueryWrapper<CmsShoppingCart> wrapper = new QueryWrapper<>();
+        wrapper.eq("product_id",proId);
+        wrapper.eq("detail",proDetail);
+        return this.getOne(wrapper);
+
     }
 }

@@ -150,6 +150,7 @@ public class PmsProductController {
     @PostMapping("/add")
     @Transactional
     ResultJson add(PmsProduct pmsProduct, MultipartFile file, MultipartFile[] files, String[] spus, String[] skus, String[] stocks) throws IOException {
+        System.out.println(pmsProduct.toString());
         pmsProduct.setImg(adminService.upload(file));
         List<String> piclist = new ArrayList<>();
         for(MultipartFile f : files) {
