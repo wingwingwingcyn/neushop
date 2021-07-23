@@ -39,6 +39,18 @@ public class CmsCustomerAddressServiceImpl extends ServiceImpl<CmsCustomerAddres
     }
 
     @Override
+    public String setAllNotDefaultWhenAdd(Long customerId) {
+        QueryWrapper<CmsCustomerAddress> wrapper = new QueryWrapper<CmsCustomerAddress>();
+        wrapper.eq("customer_id",customerId);
+        List<CmsCustomerAddress> list = list(wrapper);
+        for (CmsCustomerAddress address: list) {
+            address.setIsDefault(0);
+        }
+        this.updateBatchById(list);
+        return "添加时的所有数据都改成了非默认地址";
+    }
+
+    @Override
     public CmsCustomerAddress getDefault(Long customerId) {
         QueryWrapper<CmsCustomerAddress> wrapper = new QueryWrapper<>();
         wrapper.eq("is_default",1);

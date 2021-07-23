@@ -52,4 +52,8 @@ public class CmsCustomerAddressController {
     ResultJson getDefault(Long customerId){
         return ResultJson.success(addressService.getDefault(customerId));
     }
+    @PostMapping("/setAllNotDefaultWhenAdd")
+    ResultJson setAllNotDefaultWhenAdd(Long customerId){
+        return ResultJson.success(addressService.setAllNotDefaultWhenAdd(customerId));
+    }
 }

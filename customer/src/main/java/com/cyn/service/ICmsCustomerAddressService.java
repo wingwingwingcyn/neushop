@@ -16,5 +16,6 @@ import java.util.List;
 public interface ICmsCustomerAddressService extends IService<CmsCustomerAddress> {
     List<CmsCustomerAddress> getAddressById(Long customerId);
     String setDefault(Long customerId);
+    String setAllNotDefaultWhenAdd(Long customerId);
     CmsCustomerAddress getDefault(Long customerId);
 }

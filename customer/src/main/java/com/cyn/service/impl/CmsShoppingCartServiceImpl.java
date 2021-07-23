@@ -25,6 +25,7 @@ public class CmsShoppingCartServiceImpl extends ServiceImpl<CmsShoppingCartMappe
     public List<CmsShoppingCart> list(Long customerId) {
         QueryWrapper<CmsShoppingCart> wrapper=new QueryWrapper<>();
             wrapper.like("customer_id",customerId);
+            wrapper.eq("active",1);
         return this.list(wrapper);
     }
 
